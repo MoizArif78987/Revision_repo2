@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Figma</title>
+</head>
+
+<body>
+    <header class="header container">
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="nav-pc nav-mobile innercontainer" id="nav-menu">
+            <a href="#" class="nav__logo">Furni.</a>
+            <div class="nav__links-container">
+                <ul>
+                    <li>
+                        <a href="#" class="nav__link active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link ">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="nav__icons">
+                    <i class="ri-user-line nav__link"></i>
+                    <i class="ri-shopping-cart-2-line nav__link"></i>
+                </div>
+            </div>
+            <div class="nav__close">
+                <i class="ri-close-large-line" id="nav-close"></i>
+            </div>
+        </nav>
+        <div class="nav-toggler">
+            <a href="#" class="nav__logo">Furni.</a>
+            <i class="ri-apps-2-line" id="nav-toggle"></i>
+        </div>
+
+        <!-- Header Content -->
+        <div class="header__content inner-container grid" >
+                <h1>
+                    Modern Interior <br>
+                    Design Studio
+                </h1>
+            <div class="header__content-images">
+                <img src="images/couch.png" alt="loading" class="couch">
+                <img src="images/greenDots.png" alt="loading" class="greenDots">
+            </div>
+        </div>
+    </header>
+
+    <!-- Material -->
+     <section class="material container">
+        <div class="inner-container grid material__content">
+            <div class="material__content-text">
+                <h1 class="section-header">
+                    Crafted with excellent material.
+                </h1>
+                <p class="section-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, repudiandae eligendi, perferendis
+                    velit error, laborum nemo laudantium labore nihil commodi nam quas officiis ab?
+                </p>
+                <button class="transition-button">
+                    Explore
+                </button>
+            </div>
+            <div class="material__content-cards grid">
+                <div class="material__card">
+                    <img src="images/product-1.png" alt="">
+                    <h4>Nordic <br> Chair</h4>
+                    <h4>$50.00</h4>
+                </div>
+                <div class="material__card">
+                    <img src="images/product-2.png" alt="">
+                    <h4>Kruzo Aero <br> Chair</h4>
+                    <h4>$78.00</h4>
+                </div>
+                <div class="material__card">
+                    <img src="images/product-3.png" alt="">
+                    <h4>Ergonomic <br> Chair</h4>
+                    <h4>$43.00</h4>
+                </div>
+            </div>
+        </div>
+     </section>
+</body>
+<script src="index.js"></script>
+
+</html>
