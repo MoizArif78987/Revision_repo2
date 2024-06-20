@@ -35,3 +35,24 @@ for (let i = 0; i < materialCards.length; i++) {
         }
     });
 }
+
+
+// Resizing and adjusment of nav
+function handleNavClasses() {
+    const navMenu = document.getElementById('nav-menu');
+    if (window.innerWidth > 1100) {
+        navMenu.classList.add('nav-pc');
+        navMenu.classList.remove('nav-mobile');
+        removeElementsByClass('nav__close');
+        removeElementsByClass('nav-toggler');
+    } else {
+        navMenu.classList.add('nav-mobile');
+        navMenu.classList.remove('nav-pc');
+    }
+}
+
+// Event listener for window resize
+window.addEventListener('resize', handleNavClasses);
+
+// Initial check on page load
+document.addEventListener('DOMContentLoaded', handleNavClasses);
